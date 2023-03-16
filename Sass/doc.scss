@@ -74,6 +74,7 @@ body {
                 // filter: blur(10px);
                 transform: translateY(-10px);
                 color: white;
+                cursor: pointer;
             }
             .pic-p2 {
                 width: 25%;
@@ -88,6 +89,7 @@ body {
             .pic-p2:hover {
                 filter: blur();
                 transform: translateY(-10px);
+                cursor: pointer;
                 color: white;
             }
         }
