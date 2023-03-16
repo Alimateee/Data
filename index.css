@@ -56,7 +56,7 @@ body .content .pic1 {
   justify-content: center;
 }
 body .content .pic1 .pic-p {
-  background-image: url("/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.webp");
+  background-image: url("9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 70%;
@@ -79,7 +79,7 @@ body .content .pic1 .pic-p:hover {
 }
 body .content .pic1 .pic-p2 {
   width: 25%;
-  background-image: url("/what-is-unsplash.webp");
+  background-image: url("what-is-unsplash.webp");
   padding: 1rem;
   border-radius: 10px;
   background-size: cover;
