@@ -8,6 +8,11 @@ body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
+    .container {
+        display: grid;
+        grid-template-rows: [first] 17% [second] 10% [third] 40%;
+        
+    }
     .header {
         display: flex;
         justify-content: space-between;
@@ -22,6 +27,7 @@ body {
         margin: .3rem;
         #h1 {
             font-weight: 600;
+            align-self: center;
             font-size: 2.8rem;
             color: whitesmoke;
         }
@@ -41,7 +47,53 @@ body {
             box-shadow: 3px 3px 3px rgb(196, 196, 196);
         }
     }
-}
+    .content {
+        display: flex;
+        .pic1 {
+            display: flex;
+            justify-content: center;
+            .pic-p {
+                background-image: url('https://www.gannett-cdn.com/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 70%;
+                width: 25%;
+                padding: 1rem;
+                border-radius: 10px;
+                // filter: blur(5px);
+                transition-duration: .5s;
+                margin: .5rem;
+            }
+            .paragraph {
+                visibility: hidden;
+            }
+            .para {
+                visibility: hidden;
+            }
+            .pic-p:hover {
+                // filter: blur(10px);
+                transform: translateY(-10px);
+                color: white;
+            }
+            .pic-p2 {
+                width: 25%;
+                background-image: url('https://petapixel.com/assets/uploads/2022/12/what-is-unsplash.jpg');
+                padding: 1rem;
+                border-radius: 10px;
+                background-size: cover;
+                // filter: blur(5px);
+                transition-duration: .5s;
+                margin: .5rem;
+            }
+            .pic-p2:hover {
+                filter: blur();
+                transform: translateY(-10px);
+                color: white;
+            }
+        }
+            
+        }
+    }
 *{
     padding: 0;
     margin: 0;

@@ -10,6 +10,10 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
 }
+body .container {
+  display: grid;
+  grid-template-rows: [first] 17% [second] 10% [third] 40%;
+}
 body .header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +29,7 @@ body .header {
 }
 body .header #h1 {
   font-weight: 600;
+  align-self: center;
   font-size: 2.8rem;
   color: whitesmoke;
 }
@@ -42,6 +47,48 @@ body .header .Login:hover {
   background-color: #2980b9;
   color: white;
   box-shadow: 3px 3px 3px rgb(196, 196, 196);
+}
+body .content {
+  display: flex;
+}
+body .content .pic1 {
+  display: flex;
+  justify-content: center;
+}
+body .content .pic1 .pic-p {
+  background-image: url("https://www.gannett-cdn.com/presto/2021/03/22/NRCD/9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70%;
+  width: 25%;
+  padding: 1rem;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  margin: 0.5rem;
+}
+body .content .pic1 .paragraph {
+  visibility: hidden;
+}
+body .content .pic1 .para {
+  visibility: hidden;
+}
+body .content .pic1 .pic-p:hover {
+  transform: translateY(-10px);
+  color: white;
+}
+body .content .pic1 .pic-p2 {
+  width: 25%;
+  background-image: url("https://petapixel.com/assets/uploads/2022/12/what-is-unsplash.jpg");
+  padding: 1rem;
+  border-radius: 10px;
+  background-size: cover;
+  transition-duration: 0.5s;
+  margin: 0.5rem;
+}
+body .content .pic1 .pic-p2:hover {
+  filter: blur();
+  transform: translateY(-10px);
+  color: white;
 }
 
 * {
