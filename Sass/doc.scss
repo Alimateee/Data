@@ -60,21 +60,23 @@ body {
                 width: 25%;
                 padding: 1rem;
                 border-radius: 10px;
-                // filter: blur(5px);
+                color: white;
                 transition-duration: .5s;
                 margin: .5rem;
+                filter: blur(10px);
             }
             .paragraph {
                 visibility: hidden;
             }
-            .para {
-                visibility: hidden;
+            .pic-p:hover .paragraph {
+                visibility: visible;
+                
             }
             .pic-p:hover {
-                // filter: blur(10px);
                 transform: translateY(-10px);
-                color: white;
+                
                 cursor: pointer;
+                filter: blur(0);
             }
             .pic-p2 {
                 width: 25%;
@@ -82,18 +84,24 @@ body {
                 padding: 1rem;
                 border-radius: 10px;
                 background-size: cover;
-                // filter: blur(5px);
                 transition-duration: .5s;
                 margin: .5rem;
+                color: white;
+                filter: blur(10px);
             }
             .pic-p2:hover {
                 filter: blur();
                 transform: translateY(-10px);
                 cursor: pointer;
-                color: white;
+                filter: blur();
             }
-        }
-            
+            .para {
+                visibility: hidden;
+            }
+            .pic-p2:hover .para {
+                visibility: visible;
+            }
+        }   
         }
     }
 *{

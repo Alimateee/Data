@@ -63,19 +63,21 @@ body .content .pic1 .pic-p {
   width: 25%;
   padding: 1rem;
   border-radius: 10px;
+  color: white;
   transition-duration: 0.5s;
   margin: 0.5rem;
+  filter: blur(10px);
 }
 body .content .pic1 .paragraph {
   visibility: hidden;
 }
-body .content .pic1 .para {
-  visibility: hidden;
+body .content .pic1 .pic-p:hover .paragraph {
+  visibility: visible;
 }
 body .content .pic1 .pic-p:hover {
   transform: translateY(-10px);
-  color: white;
   cursor: pointer;
+  filter: blur(0);
 }
 body .content .pic1 .pic-p2 {
   width: 25%;
@@ -85,12 +87,20 @@ body .content .pic1 .pic-p2 {
   background-size: cover;
   transition-duration: 0.5s;
   margin: 0.5rem;
+  color: white;
+  filter: blur(10px);
 }
 body .content .pic1 .pic-p2:hover {
   filter: blur();
   transform: translateY(-10px);
   cursor: pointer;
-  color: white;
+  filter: blur();
+}
+body .content .pic1 .para {
+  visibility: hidden;
+}
+body .content .pic1 .pic-p2:hover .para {
+  visibility: visible;
 }
 
 * {
