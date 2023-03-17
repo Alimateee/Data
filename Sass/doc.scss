@@ -4,14 +4,13 @@ html {
     height: 100%;
 }
 body {
-    background-color: #487eb0;
+    background: linear-gradient(to right, #00d2ff, #928dab);
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
     .container {
         display: grid;
         grid-template-rows: [first] 17% [second] 10% [third] 40%;
-        
     }
     .header {
         display: flex;
@@ -37,9 +36,8 @@ body {
             border-radius: 5px;
             padding: .5rem;
             padding-top: .6rem;
-            cursor: pointer;
             transition-duration: .5s;
-            color: aliceblue;
+            color: gray;
         }
         .Login:hover {
             background-color: #2980b9;
@@ -63,7 +61,7 @@ body {
                 color: white;
                 transition-duration: .5s;
                 margin: .5rem;
-                filter: blur(10px);
+                filter: blur(2px);
             }
             .paragraph {
                 visibility: hidden;
@@ -87,7 +85,7 @@ body {
                 transition-duration: .5s;
                 margin: .5rem;
                 color: white;
-                filter: blur(10px);
+                filter: blur(2px);
             }
             .pic-p2:hover {
                 filter: blur();

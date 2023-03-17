@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: #487eb0;
+  background: linear-gradient(to right, #00d2ff, #928dab);
   min-height: 100%;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -39,9 +39,8 @@ body .header .Login {
   border-radius: 5px;
   padding: 0.5rem;
   padding-top: 0.6rem;
-  cursor: pointer;
   transition-duration: 0.5s;
-  color: aliceblue;
+  color: gray;
 }
 body .header .Login:hover {
   background-color: #2980b9;
@@ -66,7 +65,7 @@ body .content .pic1 .pic-p {
   color: white;
   transition-duration: 0.5s;
   margin: 0.5rem;
-  filter: blur(10px);
+  filter: blur(2px);
 }
 body .content .pic1 .paragraph {
   visibility: hidden;
@@ -88,7 +87,7 @@ body .content .pic1 .pic-p2 {
   transition-duration: 0.5s;
   margin: 0.5rem;
   color: white;
-  filter: blur(10px);
+  filter: blur(2px);
 }
 body .content .pic1 .pic-p2:hover {
   filter: blur();
