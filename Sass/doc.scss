@@ -68,11 +68,9 @@ body {
             }
             .pic-p:hover .paragraph {
                 visibility: visible;
-                
             }
             .pic-p:hover {
                 transform: translateY(-10px);
-                
                 cursor: pointer;
                 filter: blur(0);
             }

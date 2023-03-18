@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   background: linear-gradient(to right, #5614b0, #dbd65c);
+  height: 100%;
 }
 
 ol, ul {
@@ -75,6 +76,14 @@ html {
     background-position: 0% 50%;
   }
 }
+@keyframes anime {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .Login-page {
   display: flex;
   justify-content: center;
@@ -86,6 +95,7 @@ html {
   border-radius: 10px;
   background: linear-gradient(to right, #009fff, #ec2f4b);
   animation: background-picture 5s ease infinite;
+  animation: anime 2s ease-in;
   background-size: 200% 200%;
 }
 .Login-page .header {
