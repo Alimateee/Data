@@ -3,27 +3,37 @@ html {
     font-family: 'vazir' , sans-serif;
     height: 100%;
 }
+%content-name {
+    background-image: url('what-is-unsplash.webp');
+    padding: 1rem;
+    border-radius: 10px;
+    background-position: 25%;
+    background-size: cover;
+    transition-duration: .5s;
+    margin: .5rem;
+    color: white;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 11rem;
+}
 body {
-    background: linear-gradient(to right, #00d2ff, #928dab);
-    min-height: 100%;
-    display: grid;
+    // background: linear-gradient(to right, #00d2ff, #928dab);
+    background: linear-gradient(to right, #34e89e, #0f3443);
+    min-height: 100vh;
+    display: grid;  
     grid-template-rows: 1fr auto;
-    .container {
-        display: grid;
-        grid-template-rows: [first] 17% [second] 10% [third] 40%;
-    }
     .header {
         display: flex;
         justify-content: space-between;
-        padding: 1rem;
-        background: linear-gradient(to right, #2980b9, #2c3e50);
+        padding: 2rem;
+        background: linear-gradient(to right, #44a08d, #093637);
         border-radius: 5px;
         border: 4px solid gray;
         border-left-color: #2c3e50;
         border-right-color:aliceblue ;
         border-top: none;
         border-bottom: none;
-        margin: .3rem;
+        margin: .5rem;
         #h1 {
             font-weight: 600;
             align-self: center;
@@ -38,29 +48,28 @@ body {
             padding-top: .6rem;
             transition-duration: .5s;
             color: gray;
+            font-weight: 600;
+            font-size: medium;
         }
         .Login:hover {
-            background-color: #2980b9;
+            background-color: #29b997;
             color: white;
             box-shadow: 3px 3px 3px rgb(196, 196, 196);
+            transform: scale(1.111);
+            cursor: pointer;
         }
     }
     .content {
-        display: flex;
         .pic1 {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2 , auto);
+            place-items: center;
+            
             .pic-p {
                 background-image: url('9d9dd9e4-e84a-402e-ba8f-daa659e6e6c5-PhotoWord_003.webp');
-                background-size: cover;
-                background-repeat: no-repeat;
                 background-position: 70%;
-                width: 25%;
-                padding: 1rem;
-                border-radius: 10px;
-                color: white;
-                transition-duration: .5s;
-                margin: .5rem;
+                margin-left: 4rem;
+                @extend %content-name;
                 filter: blur(2px);
             }
             .paragraph {
@@ -75,15 +84,10 @@ body {
                 filter: blur(0);
             }
             .pic-p2 {
-                width: 25%;
+                @extend %content-name;
                 background-image: url('what-is-unsplash.webp');
-                padding: 1rem;
-                border-radius: 10px;
-                background-size: cover;
-                transition-duration: .5s;
-                margin: .5rem;
-                color: white;
                 filter: blur(2px);
+                margin-right: 4rem;
             }
             .pic-p2:hover {
                 filter: blur();
@@ -97,6 +101,83 @@ body {
             .pic-p2:hover .para {
                 visibility: visible;
             }
+            .pic-p3 {
+                @extend %content-name;
+                background-image: url('images.jpg');
+                margin-left: 4rem;
+            }
+            .pic-p4 {
+                @extend %content-name;
+                background-image: url('nature-3082832__480.jpg');
+                margin-right: 4rem;
+            }
+            .pic-p5 {
+                @extend %content-name;
+                background-image: url('supermoon-moon-smartphone-photo-picture.jpg');
+                margin-left: 4rem;
+            }
+            .pic-p6 {
+                @extend %content-name;
+                background-image: url('_117310488_16.jpg');
+                margin-right: 4rem;
+            }
+            .pic-p7 {
+                @extend %content-name;
+                background-image: url('_114224332_themothership_seanheavey.jpg');
+                margin-left: 4rem;
+            }
+            .pic-p8 {
+                @extend %content-name;
+                background-image: url('interesting-pictures-of-clouds.jpg');
+                margin-right: 4rem;
+            }
+            .pic-p9 {
+                @extend %content-name;
+                background-image: url('istockphoto-482684874-170667a.jpg');
+                margin-left: 4rem;
+            }
+            .pic-p10 {
+                @extend %content-name;
+                background-image: url('nature-3082832__480.jpg');
+                margin-right: 4rem;
+            }
+            .same {
+                height: fit-content;
+            }
+            .same-para {
+                visibility: hidden;
+            }
+            .same:hover .same-para  {
+                visibility: visible;
+                
+            }
+            .left-box:hover {
+                box-shadow: 4px 4px 5px #928dab;
+                transform: rotate(5deg) scale(1.111);
+                cursor: pointer;
+                filter: blur();
+            }
+            .left-box {
+                justify-self:end;
+                transition-duration: .7s;
+                filter: blur(2px);
+            }
+            .right-box:hover  {
+                box-shadow: 4px 4px 5px #928dab;
+                transform: rotate(-5deg) scale(1.11111);
+                cursor: pointer;
+                filter: blur();
+            }
+            .right-box {
+                justify-self: start;
+                filter: blur(2px);
+                transition-duration: .7s;
+            }
+            @media screen and (min-width : 1015px) {
+                .same {
+                    height: 12rem;
+                }
+            }
         }   
         }
     }
@@ -105,7 +186,8 @@ body {
     margin: 0;
 }
 #footer {
-    background: linear-gradient(to left, #2980b9, #2c3e50);  
+    background: linear-gradient(to right, #44a08d, #093637);
+    filter:  blur(3px);
     text-align: center;
     padding: 1.5rem;
     color: aliceblue;

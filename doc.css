@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background: linear-gradient(to right, #5614b0, #dbd65c);
+  /* background: linear-gradient(to right, #5614b0, #dbd65c); */
+  background: linear-gradient(to right, #134e5e, #71b280);
   height: 100%;
 }
 
@@ -93,7 +94,8 @@ html {
   box-shadow: 6px 4px 8px rgba(185, 185, 185, 0.78);
   margin-top: 2rem;
   border-radius: 10px;
-  background: linear-gradient(to right, #009fff, #ec2f4b);
+  /* background: linear-gradient(to right, #009fff, #ec2f4b); */
+  background: linear-gradient(to left, #134e5e 50%, #71b280);
   animation: background-picture 5s ease infinite;
   animation: anime 2s ease-in;
   background-size: 200% 200%;
@@ -131,7 +133,7 @@ html {
   border-radius: 7px;
 }
 .Login-page .content .div-textbox:focus-within {
-  border-image: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  border-image: linear-gradient(to right, #4a4a4a , #a0a0a0);
   border-image-slice: 1;
   transition-property: border-image;
 }
@@ -161,7 +163,8 @@ html {
   border-radius: 5px;
   outline: none;
   border: none;
-  background-color: #5433ff;
+  /* background-color: #5433ff; */
+  background-color: #046f6c;
   font-size: 1rem;
   color: white;
   cursor: pointer;
